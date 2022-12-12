@@ -46,6 +46,10 @@
   .header-name {
     font-size: 55px;
   }
+  .nav-bar-top a:hover {
+    color: goldenrod;
+    font-size: 2em;
+  }
   .nav-bar-top a:active {
     color: goldenrod;
     font-size: 1.5em;

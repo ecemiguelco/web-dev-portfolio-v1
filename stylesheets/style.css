@@ -16,8 +16,6 @@ body {
 }
 
 header {
-  position: relative;
-  top: 0;
   height: 90vh;
   width: 100%;
 }
@@ -44,7 +42,6 @@ a:hover {
   height: 12vh;
   width: 100%;
   padding: 1.5em;
-  z-index: 2;
 }
 
 .nav-bar-top a {
@@ -52,17 +49,12 @@ a:hover {
   font-family: "roboto mono", monospace;
   font-size: 1.5em;
 }
-.nav-bar-top a:hover {
-  color: goldenrod;
-  font-size: 2em;
-}
 
 /* Landing Page Styling elements */
 .landing-page {
   background-color: #1a1a43;
   height: 100%;
   display: flex;
-  flex-basis: 100%;
   justify-self: center;
   justify-content: center;
   align-items: center;
@@ -128,6 +120,12 @@ a:hover {
 }
 
 /* Skills Section */
+.skills-info {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
 .skill-item {
   color: whitesmoke;
   font-size: 1em;
@@ -138,12 +136,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 0.3em;
-}
-
-.skills-info {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1em;
 }
 
 .skill-item img {
