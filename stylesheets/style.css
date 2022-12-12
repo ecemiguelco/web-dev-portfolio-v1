@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "roboto mono", monospace;
+  color: black;
+  overflow: auto;
+}
+
+header {
+  position: relative;
+  top: 0;
+  height: 90vh;
+  width: 100%;
+}
+
+a {
+  color: aquamarine;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: goldenrod;
+}
+
+/* Navigation Bar styling elements */
+.nav-bar-top {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  height: 12vh;
+  width: 100%;
+  padding: 1.5em;
+  z-index: 2;
+}
+
+.nav-bar-top a {
+  color: aquamarine;
+  font-family: "roboto mono", monospace;
+  font-size: 1.5em;
+}
+.nav-bar-top a:hover {
+  color: goldenrod;
+  font-size: 2em;
+}
+
+/* Landing Page Styling elements */
+.landing-page {
+  background-color: #1a1a43;
+  height: 100%;
+  display: flex;
+  flex-basis: 100%;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-contents {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em;
+  width: 70%;
+  max-width: 700px;
+  min-width: 200px;
+  background-color: #150833;
+  padding: 1.5em;
+  border: 1px solid lightsteelblue;
+  border-radius: 1.5em;
+}
+
+.header-name {
+  color: lightsteelblue;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+.header-info {
+  color: lightslategray;
+  font-size: medium;
+}
+
+/* Main Content */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 100vh);
+  background-color: #1a1a43;
+  overflow-y: auto;
+}
+
+.grid-item {
+  display: grid;
+  place-items: center;
+  grid-column: 1 / end;
+  height: 100vh;
+  max-height: 100%;
+  width: 100%;
+}
+
+.media {
+  width: 70%;
+  max-width: 700px;
+  min-width: 200px;
+  color: lightskyblue;
+  background-color: #150833;
+  padding: 1.5em;
+  border: 1px solid lightsteelblue;
+  border-radius: 1.5em;
+  display: grid;
+  gap: 1em;
+}
+
+.media h2 {
+  color: aquamarine;
+}
+
+/* Skills Section */
+.skill-item {
+  color: whitesmoke;
+  font-size: 1em;
+  border: 1px solid white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.skills-info {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
+.skill-item img {
+  width: 1em;
+}
+
+/* Career Section  */
+.resume-btn {
+  font-size: 1em;
+  color: aquamarine;
+  width: min-content;
+  border: 1px solid white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  transition: 0.3s;
+}
+
+.resume-btn:hover,
+.send-reset:hover {
+  color: #181325;
+  background-color: white;
+  cursor: pointer;
+}
+
+.resume-btn:active,
+.send-reset:active {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #8005eb;
+  transition: 0.1s;
+  background-color: aquamarine;
+}
+
+/* Projects Section */
+.web-proj-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.project-item {
+  aspect-ratio: 16/9;
+  width: 100%;
+  background-color: rgb(48, 38, 72);
+  box-shadow: 0 0 5px 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2em;
+}
+
+/* Footer Section  */
+footer {
+  background-color: #1a1a43;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.form-in {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
+
+textarea {
+  max-width: 100%;
+  max-height: 100px;
+  resize: vertical;
+  height: 10em;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.3em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  cursor: text;
+}
+
+.send-reset {
+  font-size: 1em;
+  color: black;
+  width: max-content;
+  border: 1px solid white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.attribution {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* Media header links icon */
+
+.media-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+}
+
+.media-icons img,
+.media-icons a {
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1/1;
+  filter: grayscale(100%);
+}
+
+.media-icons img:hover,
+.media-icons a:hover {
+  filter: grayscale(0%);
+}
+
+/* Pho recipe  */
+.pho {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  width: max-content;
+}
+
+.pho img {
+  width: 50px;
+  filter: grayscale(100%);
+}
+
+.pho img:hover {
+  width: 50px;
+  filter: grayscale(0%);
+}

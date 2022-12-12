@@ -1,0 +1,53 @@
+@media only screen and (max-width: 281px) {
+  .nav-bar-top {
+    gap: 0.5em;
+  }
+
+  .nav-bar-top a {
+    font-size: 1em;
+  }
+
+  .nav-bar-top a:hover {
+    color: goldenrod;
+    font-size: 0.5em;
+  }
+  .nav-bar-top a:active {
+    color: goldenrod;
+    font-size: 0.5em;
+  }
+
+  .header-name {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 282px) and (max-width: 770px) {
+  .nav-bar-top {
+    gap: 0.7em;
+  }
+  .nav-bar-top a {
+    font-size: 0.8rem;
+  }
+
+  .nav-bar-top a:hover {
+    color: goldenrod;
+    font-size: 1.1rem;
+  }
+  .nav-bar-top a:active {
+    color: goldenrod;
+    font-size: 0.9em;
+  }
+
+  .header-name {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 771px) {
+  .header-name {
+    font-size: 55px;
+  }
+  .nav-bar-top a:active {
+    color: goldenrod;
+    font-size: 1.5em;
+  }
+}
