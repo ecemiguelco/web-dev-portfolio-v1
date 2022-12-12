@@ -265,6 +265,12 @@ textarea {
   gap: 1em;
 }
 
+.media-header h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+}
+
 .media-icons {
   display: flex;
   flex-direction: row;
