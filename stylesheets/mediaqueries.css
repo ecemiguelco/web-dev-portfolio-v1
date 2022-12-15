@@ -1,15 +1,15 @@
-@media only screen and (max-width: 281px) {
+@media only screen and (max-width: 320px) {
   .nav-bar-top {
-    gap: 0.5em;
+    gap: 1em;
   }
 
   .nav-bar-top a {
-    font-size: 1em;
+    font-size: 0.5em;
   }
 
   .nav-bar-top a:hover {
     color: goldenrod;
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
   .nav-bar-top a:active {
     color: goldenrod;
@@ -17,11 +17,25 @@
   }
 
   .header-name {
-    font-size: 30px;
+    font-size: 1.5em;
+  }
+
+  .header-info,
+  .media p,
+  .skill-item {
+    font-size: 0.8em;
+  }
+
+  .media-header h2 {
+    font-size: 1.5em;
+  }
+
+  .media-overflow {
+    overflow: auto;
   }
 }
 
-@media only screen and (min-width: 282px) and (max-width: 770px) {
+@media only screen and (min-width: 320px) and (max-width: 771px) {
   .nav-bar-top {
     gap: 0.7em;
   }
@@ -41,7 +55,12 @@
   .header-name {
     font-size: 45px;
   }
+
+  .media-overflow {
+    overflow: auto;
+  }
 }
+
 @media only screen and (min-width: 771px) {
   .header-name {
     font-size: 55px;

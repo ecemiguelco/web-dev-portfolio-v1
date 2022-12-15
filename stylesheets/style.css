@@ -42,6 +42,7 @@ a:hover {
   height: 12vh;
   width: 100%;
   padding: 1.5em;
+  z-index: 1;
 }
 
 .nav-bar-top a {
@@ -106,6 +107,7 @@ a:hover {
   width: 70%;
   max-width: 700px;
   min-width: 200px;
+  max-height: 500px;
   color: lightskyblue;
   background-color: #150833;
   padding: 1.5em;
